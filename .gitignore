@@ -1,0 +1,9 @@
+# Dependencies
+yarn.lock
+package-lock.json
+
+
+# Folders
+.vscode
+node_modules
+dist
