@@ -7,7 +7,7 @@
 	"license": "",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/telic-solutions/website.git"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.4.4",

@@ -1,0 +1,31 @@
+#content {
+  padding: 0 20px 0 20px;
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 5%;
+  border-left: 1px dashed #333;
+  border-right: 1px dashed #333;
+  color: #555;
+  background-color: #fff;
+  }
+
+      /* ARTICLES */
+  .intro {
+  float:left;
+  width: 25%;
+  margin: 3px 0 5px 0;
+  padding: 5px;
+  text-align:left;
+  }
+  .intro2 {
+  float: left;
+  width: 25%;
+  margin: 3px 0 5px 20px;
+  padding: 5px;
+  }
+  .intro3 {
+  float:right;
+  width: 33%;
+  margin: 3px 0 5px 0;
+  padding: 5px;
+  }

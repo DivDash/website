@@ -1,6 +1,6 @@
-import BlogImage1 from '../../assets/image/agency/blog/blog-img1.png';
-import BlogImage2 from '../../assets/image/agency/blog/blog-img2.png';
-import BlogImage3 from '../../assets/image/agency/blog/blog-img3.png';
+import BlogImage1 from '../../assets/image/agency/blog/port1.png';
+import BlogImage2 from '../../assets/image/agency/blog/port2.png';
+import BlogImage3 from '../../assets/image/agency/blog/port3.png';
 import Member1 from '../../assets/image/agency/team/member-1.jpg';
 import Member2 from '../../assets/image/agency/team/member-2.jpg';
 import Member3 from '../../assets/image/agency/team/member-3.jpg';
@@ -71,9 +71,9 @@ const data = {
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      title: 'Hybrid Technology',
       description:
-        'By using Search Engine Optimization, You will get more Clients',
+        'We provide cross platform technology to get the same app flavor for Smart Phones, Desktops as well as Web Apps for its customers.',
     },
     {
       id: 2,
@@ -92,23 +92,23 @@ const data = {
     {
       id: 4,
       icon: 'flaticon-startup',
-      title: 'Business Solutions',
+      title: 'Search Engine Optimization',
       description:
-        'We are commited to provide proper business solutions with reasonable pricing',
+        'SEO provides helpful techniques that result to up-link any website according to the international standards.Contact us for such service of your website!',
     },
     {
       id: 5,
       icon: 'flaticon-briefing',
-      title: 'Business Analysis',
+      title: 'Mobile Develpoment',
       description:
-        'A day to day report about your ongoing business for proper understanding',
+        'Mobile apps are the latest trends in this era of technology that have brought the information globe in hands. At Telic Solutions, we offer development in Android,IOS and Progressive Web App',
     },
     {
       id: 6,
       icon: 'flaticon-creative',
-      title: 'Content Management',
+      title: 'Website Development',
       description:
-        'Proper Content Management is important to find out the real clients for your agencies',
+        'To cope up with the current era tech, websites have gained vast evolution over the past years. At Telic Solutions we offer different platforms such as E-Commerce Stores, Online Booking Sites, Blog Sites and much more as per customer requirements and satisfaction.',
     },
   ],
   qualityFeature: [
@@ -144,21 +144,21 @@ const data = {
   blog: [
     {
       id: 1,
-      title: 'Real home corporation',
+      title: 'Zachary Burau',
       thumbnail_url: BlogImage1,
       date: 'November 02, 2018',
       postLink: '#1',
     },
     {
       id: 2,
-      title: 'Sheltech developer ltd.',
+      title: 'Naveed Ahmad',
       thumbnail_url: BlogImage2,
       date: 'November 12, 2018',
       postLink: '#2',
     },
     {
       id: 3,
-      title: 'Alt architecture co.',
+      title: 'Max Motamedi',
       thumbnail_url: BlogImage3,
       date: 'December 09, 2018',
       postLink: '#3',

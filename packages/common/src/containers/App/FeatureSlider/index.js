@@ -29,7 +29,7 @@ const images = [
   {
     original: `${Image2}`,
     thumbnail: `${Thumb2}`,
-    thumbnailLabel: 'Search optimization',
+    thumbnailLabel: 'Search Optimization',
   },
   {
     original: `${Image3}`,

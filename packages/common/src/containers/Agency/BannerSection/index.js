@@ -43,13 +43,13 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="With Knowledge, Passion, Heart & Soul Agencies"
+                  content="Telic Solutions Inc."
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly ."
+                  content="A SHARIA COMPLIANT IT SOLUTIONS INC."
                   {...description}
                 />
               }

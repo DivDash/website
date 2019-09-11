@@ -43,7 +43,7 @@ export default () => {
           </Sticky>
           <BannerSection />
           <FeatureSection />
-          <AboutUsSection />
+          {/* <AboutUsSection /> */}
           <WorkHistory />
           <BlogSection />
           <QualitySection />

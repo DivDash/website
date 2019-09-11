@@ -12,7 +12,7 @@ import QualitySectionWrapper from './qualitySection.style';
 
 import data from '../../../data/Agency';
 
-import FeatureImage from '../../../assets/image/agency/surface-studio.png';
+import FeatureImage from '../../../assets/image/agency/Skills-collage.png';
 
 const QualitySection = ({
   row,
