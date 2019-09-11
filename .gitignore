@@ -7,3 +7,6 @@ package-lock.json
 .vscode
 node_modules
 dist
+
+# Files
+.DS_Store
