@@ -22,7 +22,6 @@ import NewsletterSection from 'common/src/containers/Agency/NewsletterSection';
 import QualitySection from 'common/src/containers/Agency/QualitySection';
 import Footer from 'common/src/containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import 'bootstrap/dist/css/bootstrap.css';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
 

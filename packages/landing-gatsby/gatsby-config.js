@@ -73,7 +73,6 @@ module.exports = {
         ],
       },
     },
-<<<<<<< HEAD
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -81,8 +80,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-=======
->>>>>>> 1bc429a3ade95e0e25224558b11b201bc5503231
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
