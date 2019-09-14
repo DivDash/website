@@ -1,0 +1,16 @@
+# Dependencies
+yarn.lock
+package-lock.json
+
+
+# Folders
+.vscode
+node_modules
+dist
+
+# Files
+.DS_Store
+yarn-error.log
+
+/packages/landing-gatsby/.env.development
+/packages/landing-gatsby/.env.production
