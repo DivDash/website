@@ -1,231 +1,229 @@
-import BlogImage1 from "../../assets/image/agency/blog/port1.png";
-import BlogImage2 from "../../assets/image/agency/blog/port2.png";
-import BlogImage3 from "../../assets/image/agency/blog/port3.png";
-import Member1 from "../../assets/image/agency/team/member-1.jpg";
-import Member2 from "../../assets/image/agency/team/member-2.jpg";
-import Member3 from "../../assets/image/agency/team/member-3.jpg";
-import Denny from "../../assets/image/agency/client/zachary.png";
-import Menny from "../../assets/image/agency/client/naveed.png";
-import Max from "../../assets/image/agency/client/max.png";
+import BlogImage1 from '../../assets/image/agency/blog/port1.png';
+import BlogImage2 from '../../assets/image/agency/blog/port2.png';
+import BlogImage3 from '../../assets/image/agency/blog/port3.png';
+import Member1 from '../../assets/image/agency/team/member-1.jpg';
+import Member2 from '../../assets/image/agency/team/member-2.jpg';
+import Member3 from '../../assets/image/agency/team/member-3.jpg';
+import Denny from '../../assets/image/agency/client/zachary.png';
+import Menny from '../../assets/image/agency/client/naveed.png';
+import Max from '../../assets/image/agency/client/max.png';
 const data = {
   menuItems: [
     {
-      label: "Feature",
-      path: "#featureSection",
-      offset: "80"
+      label: 'Feature',
+      path: '#featureSection',
+      offset: '80',
     },
     {
-      label: "Work History",
-      path: "#workHistorySection",
-      offset: "100"
+      label: 'Work History',
+      path: '#workHistorySection',
+      offset: '100',
     },
     {
-      label: "Portfolio",
-      path: "#blogSection",
-      offset: "100"
+      label: 'Portfolio',
+      path: '#blogSection',
+      offset: '100',
     },
     {
-      label: "Quality feature",
-      path: "#qualitySection",
-      offset: "100"
+      label: 'Quality feature',
+      path: '#qualitySection',
+      offset: '100',
     },
     {
-      label: "Testimonial",
-      path: "#testimonialSection",
-      offset: "100"
+      label: 'Testimonial',
+      path: '#testimonialSection',
+      offset: '100',
     },
     {
-      label: "Team Member",
-      path: "#teamSection",
-      offset: "67"
+      label: 'Team Member',
+      path: '#teamSection',
+      offset: '67',
     },
     {
-      label: "FAQ",
-      path: "#faqSection",
-      offset: "100"
-    }
+      label: 'FAQ',
+      path: '#faqSection',
+      offset: '100',
+    },
   ],
   aboutus: [
     {
       id: 1,
-      title: "Amazing communication experience.",
-      icon: "flaticon-next"
+      title: 'Amazing communication experience.',
+      icon: 'flaticon-next',
     },
     {
       id: 2,
-      title: "Best designing experience with trending tools and sizes.",
-      icon: "flaticon-next"
+      title: 'Best designing experience with trending tools and sizes.',
+      icon: 'flaticon-next',
     },
     {
       id: 3,
-      title: "Training and communication method remotely.",
-      icon: "flaticon-next"
+      title: 'Training and communication method remotely.',
+      icon: 'flaticon-next',
     },
     {
       id: 4,
-      title: "24/7 Hour onine supports.",
-      icon: "flaticon-next"
-    }
+      title: '24/7 Hour onine supports.',
+      icon: 'flaticon-next',
+    },
   ],
   features: [
     {
       id: 1,
-      icon: "flaticon-flask",
-      title: "Hybrid Technology",
+      icon: 'flaticon-flask',
+      title: 'Uber for X',
       description:
-        "We provide cross platform technology to get the same app flavor for Smart Phones, Desktops as well as Web Apps for its customers."
+        "Do you have an idea which follows the 'Uber for X' business model? Do you want to make the next Careem, Bykea or AirBNB? Well look no further! Tell us about your requirements and application ideas and we will help turn your idea into a reality!",
     },
     {
       id: 2,
-      icon: "flaticon-pencil-case",
-      title: "UI/UX Design",
+      icon: 'flaticon-pencil-case',
+      title: 'Social Media',
       description:
-        "We provide the best UI/UX Design by following the latest trends of the market ."
+        'Websites like Facebook, Instagram and Snapchat are used daily by literally billions of users. If you have an idea similar to these companies, you can discuss them with us and we will help you create your own social media platform.',
     },
     {
       id: 3,
-      icon: "flaticon-ruler",
-      title: "Wireframing Task",
+      icon: 'flaticon-ruler',
+      title: 'Online Store & Delivery',
       description:
-        "We respect our customer opinions and deals with them with perfect wireframing "
+        'We can help create an online presence for your business or restaurant. Whether it be a delivery service application or an online store or both, we will help you to expand your customer reach.',
     },
     {
       id: 4,
-      icon: "flaticon-startup",
-      title: "Search Engine Optimization",
+      icon: 'flaticon-startup',
+      title: 'Virtual Classroom',
       description:
-        "SEO provides helpful techniques that result to up-link any website according to the international standards.Contact us for such service of your website!"
+        'If you are an educational institute or teacher looking to teach to a wider audience or create a network of teachers, we can help you create an online virtual system for your classes.',
     },
     {
       id: 5,
-      icon: "flaticon-briefing",
-      title: "Mobile Develpoment",
+      icon: 'flaticon-briefing',
+      title: 'Freelance Market Place',
       description:
-        "Mobile apps are the latest trends in this era of technology that have brought the information globe in hands. At Telic Solutions, we offer development in Android,IOS and Progressive Web App"
+        'Freelance websites offer a market place for clients and service providers to meet. The services can range from website development to plumbing and painting. We can help you create the entire system for the marketplace to function well.',
     },
     {
       id: 6,
-      icon: "flaticon-creative",
-      title: "Website Development",
+      icon: 'flaticon-creative',
+      title: 'Million Dollar Idea',
       description:
-        "To cope up with the current era tech, websites have gained vast evolution over the past years. At Telic Solutions we offer different platforms such as E-Commerce Stores, Online Booking Sites, Blog Sites and much more as per customer requirements and satisfaction."
-    }
+        'If you have the next unique million dollar idea and you are willing to invest your time and money into it, you can contact us and we will make sure that your idea will turn into a reality! Providing the best route for you to take in order to introduce your application to the World.',
+    },
   ],
   qualityFeature: [
     {
       id: 1,
-      icon: "flaticon-flask",
-      title: "Search Optimization",
+      icon: 'flaticon-flask',
+      title: 'Search Optimization',
       description:
-        "By using Search Engine Optimization, You will get more Clients."
+        'By using Search Engine Optimization, You will get more Clients.',
     },
     {
       id: 2,
-      icon: "flaticon-pencil-case",
-      title: "Wireframing Task",
+      icon: 'flaticon-pencil-case',
+      title: 'Wireframing Task',
       description:
-        "We respect our customer opinions and deals with them with perfect wireframing."
+        'We respect our customer opinions and deals with them with perfect wireframing.',
     },
     {
       id: 3,
-      icon: "flaticon-ruler",
-      title: "Ui/Ux Design",
+      icon: 'flaticon-ruler',
+      title: 'Ui/Ux Design',
       description:
-        "We provide the best UI/UX Design by following the latest trends of the market ."
+        'We provide the best UI/UX Design by following the latest trends of the market .',
     },
     {
       id: 4,
-      icon: "flaticon-briefing",
-      title: "Content Writting",
+      icon: 'flaticon-briefing',
+      title: 'Content Writting',
       description:
-        "Proper Content Management is important to find out the real clients for your agencies ."
-    }
+        'Proper Content Management is important to find out the real clients for your agencies .',
+    },
   ],
   blog: [
     {
       id: 1,
-      title: "Zachary Burau",
+      title: 'Zachary Burau',
       thumbnail_url: BlogImage1,
-      date: "November 02, 2018",
-      postLink: "#1"
+      date: 'November 02, 2018',
+      postLink: '#1',
     },
     {
       id: 2,
-      title: "Naveed Ahmad",
+      title: 'Naveed Ahmad',
       thumbnail_url: BlogImage2,
-      date: "November 12, 2018",
-      postLink: "#2"
+      date: 'November 12, 2018',
+      postLink: '#2',
     },
     {
       id: 3,
-      title: "Max Motamedi",
+      title: 'Max Motamedi',
       thumbnail_url: BlogImage3,
-      date: "December 09, 2018",
-      postLink: "#3"
-    }
+      date: 'December 09, 2018',
+      postLink: '#3',
+    },
   ],
   teamMember: [
     {
       id: 1,
-      name: "Jessica Fanddy",
+      name: 'Jessica Fanddy',
       thumbnail_url: Member1,
-      designation: "Co Founder",
+      designation: 'Co Founder',
       social_links: [
-        "flaticon-facebook-logo",
-        "flaticon-twitter-logo-silhouette",
-        "flaticon-instagram",
-        "flaticon-dribble-logo"
-      ]
+        'flaticon-facebook-logo',
+        'flaticon-twitter-logo-silhouette',
+        'flaticon-instagram',
+        'flaticon-dribble-logo',
+      ],
     },
     {
       id: 2,
-      name: "Devid Justingul",
+      name: 'Devid Justingul',
       thumbnail_url: Member2,
-      designation: "Senior UI/UX Designer",
+      designation: 'Senior UI/UX Designer',
       social_links: [
-        "flaticon-twitter-logo-silhouette",
-        "flaticon-instagram",
-        "flaticon-facebook-logo",
-        "flaticon-dribble-logo"
-      ]
+        'flaticon-twitter-logo-silhouette',
+        'flaticon-instagram',
+        'flaticon-facebook-logo',
+        'flaticon-dribble-logo',
+      ],
     },
     {
       id: 3,
-      name: "Handdy Albuzz",
+      name: 'Handdy Albuzz',
       thumbnail_url: Member3,
-      designation: "Article Writter",
+      designation: 'Article Writter',
       social_links: [
-        "flaticon-dribble-logo",
-        "flaticon-twitter-logo-silhouette",
-        "flaticon-instagram",
-        "flaticon-facebook-logo"
-      ]
-    }
+        'flaticon-dribble-logo',
+        'flaticon-twitter-logo-silhouette',
+        'flaticon-instagram',
+        'flaticon-facebook-logo',
+      ],
+    },
   ],
   testimonial: [
     {
       id: 1,
-      name: "Zachary Burau",
-      designation: "Founder of Wanderift",
+      name: 'Zachary Burau',
+      designation: 'Founder of Wanderift',
       comment:
-        "They are a team of great developers and did great work!Great guys as well!Does a great job.",
-      avatar_url: Denny
+        'They are a team of great developers and did great work!Great guys as well!Does a great job.',
+      avatar_url: Denny,
     },
     {
       id: 2,
-      name: "Naveed Ahmad",
-      designation: "Senior Manager Software Engineering at Capital One",
-      comment:
-        "Excellent Work, very happywith deliverables and communication.",
-      avatar_url: Menny
+      name: 'Naveed Ahmad',
+      designation: 'Senior Manager Software Engineering at Capital One',
+      comment: 'Excellent Work, very happywith deliverables and communication.',
+      avatar_url: Menny,
     },
     {
       id: 3,
-      name: "Max Motamedi",
-      designation: "President of Carpet Floors and More",
-      comment:
-        "Thank you very much for having my project done successfully.",
-      avatar_url: Max
+      name: 'Max Motamedi',
+      designation: 'President of Carpet Floors and More',
+      comment: 'Thank you very much for having my project done successfully.',
+      avatar_url: Max,
     },
     // {
     //   id: 4,
@@ -240,176 +238,176 @@ const data = {
     {
       id: 1,
       expend: true,
-      title: "How to contact with Customer Service?",
+      title: 'Which technologies does your company use?',
       description:
-        "Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!. "
+        'We have a diverse range of technologies that we use in our production apps depending on the desired platform. For more information, you can check out our about section.',
     },
     {
       id: 2,
-      title: "App installation failed, how to update system information?",
+      title: 'App installation failed, how to update system information?',
       description:
-        "Please read the documentation carefully . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum . "
+        'Please read the documentation carefully . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum . ',
     },
     {
       id: 3,
-      title: "Website reponse taking time, how to improve?",
+      title: 'Website reponse taking time, how to improve?',
       description:
-        "At first, Please check your internet connection . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum ."
+        'At first, Please check your internet connection . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum .',
     },
     {
       id: 4,
-      title: "New update fixed all bug and issues?",
+      title: 'New update fixed all bug and issues?',
       description:
-        "We are giving the update of this theme continuously . You will receive an email Notification when we push an update. Always try to be updated with us ."
-    }
+        'We are giving the update of this theme continuously . You will receive an email Notification when we push an update. Always try to be updated with us .',
+    },
   ],
   menuWidget: [
     {
       id: 1,
-      title: "About Us",
+      title: 'About Us',
       menuItems: [
         {
           id: 1,
-          url: "#1",
-          text: "Support Center"
+          url: '#1',
+          text: 'Support Center',
         },
         {
           id: 2,
-          url: "#2",
-          text: "Customer Support"
+          url: '#2',
+          text: 'Customer Support',
         },
         {
           id: 3,
-          url: "#3",
-          text: "About Us"
+          url: '#3',
+          text: 'About Us',
         },
         {
           id: 4,
-          url: "#4",
-          text: "Copyright"
+          url: '#4',
+          text: 'Copyright',
         },
         {
           id: 5,
-          url: "#5",
-          text: "Popular Campaign"
-        }
-      ]
+          url: '#5',
+          text: 'Popular Campaign',
+        },
+      ],
     },
     {
       id: 2,
-      title: "Our Information",
+      title: 'Our Information',
       menuItems: [
         {
           id: 1,
-          url: "#1",
-          text: "Return Policy"
+          url: '#1',
+          text: 'Return Policy',
         },
         {
           id: 2,
-          url: "#2",
-          text: "Privacy Policy"
+          url: '#2',
+          text: 'Privacy Policy',
         },
         {
           id: 3,
-          url: "#2",
-          text: "Terms & Conditions"
+          url: '#2',
+          text: 'Terms & Conditions',
         },
         {
           id: 4,
-          url: "#4",
-          text: "Site Map"
+          url: '#4',
+          text: 'Site Map',
         },
         {
           id: 5,
-          url: "#5",
-          text: "Store Hours"
-        }
-      ]
+          url: '#5',
+          text: 'Store Hours',
+        },
+      ],
     },
     {
       id: 3,
-      title: "My Account",
+      title: 'My Account',
       menuItems: [
         {
           id: 1,
-          url: "#1",
-          text: "Press inquiries"
+          url: '#1',
+          text: 'Press inquiries',
         },
         {
           id: 2,
-          url: "#2",
-          text: "Social media directories"
+          url: '#2',
+          text: 'Social media directories',
         },
         {
           id: 3,
-          url: "#3",
-          text: "Images & B-roll"
+          url: '#3',
+          text: 'Images & B-roll',
         },
         {
           id: 4,
-          url: "#4",
-          text: "Permissions"
+          url: '#4',
+          text: 'Permissions',
         },
         {
           id: 5,
-          url: "#5",
-          text: "Speaker requests"
-        }
-      ]
+          url: '#5',
+          text: 'Speaker requests',
+        },
+      ],
     },
     {
       id: 4,
-      title: "Policy",
+      title: 'Policy',
       menuItems: [
         {
           id: 1,
-          url: "#1",
-          text: "Application security"
+          url: '#1',
+          text: 'Application security',
         },
         {
           id: 2,
-          url: "#2",
-          text: "Software principles"
+          url: '#2',
+          text: 'Software principles',
         },
         {
           id: 3,
-          url: "#3",
-          text: "Unwanted software policy"
+          url: '#3',
+          text: 'Unwanted software policy',
         },
         {
           id: 4,
-          url: "#4",
-          text: "Responsible supply chain"
-        }
-      ]
-    }
+          url: '#4',
+          text: 'Responsible supply chain',
+        },
+      ],
+    },
   ],
   social_profile: [
     {
       id: 1,
-      icon: "flaticon-facebook-logo",
-      link: "#1"
+      icon: 'flaticon-facebook-logo',
+      link: '#1',
     },
     {
       id: 2,
-      icon: "flaticon-twitter-logo-silhouette",
-      link: "#2"
+      icon: 'flaticon-twitter-logo-silhouette',
+      link: '#2',
     },
     {
       id: 3,
-      icon: "flaticon-instagram",
-      link: "#3"
+      icon: 'flaticon-instagram',
+      link: '#3',
     },
     {
       id: 4,
-      icon: "flaticon-tumblr-logo",
-      link: "#4"
+      icon: 'flaticon-tumblr-logo',
+      link: '#4',
     },
     {
       id: 5,
-      icon: "flaticon-dribble-logo",
-      link: "#5"
-    }
-  ]
+      icon: 'flaticon-dribble-logo',
+      link: '#5',
+    },
+  ],
 };
 export default data;
