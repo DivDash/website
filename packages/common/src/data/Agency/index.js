@@ -4,9 +4,9 @@ import BlogImage3 from "../../assets/image/agency/blog/port3.png";
 import Member1 from "../../assets/image/agency/team/member-1.jpg";
 import Member2 from "../../assets/image/agency/team/member-2.jpg";
 import Member3 from "../../assets/image/agency/team/member-3.jpg";
-import Denny from "../../assets/image/agency/client/denny.png";
-import Menny from "../../assets/image/agency/client/menny.png";
-
+import Denny from "../../assets/image/agency/client/zachary.png";
+import Menny from "../../assets/image/agency/client/naveed.png";
+import Max from "../../assets/image/agency/client/max.png";
 const data = {
   menuItems: [
     {
@@ -205,36 +205,36 @@ const data = {
   testimonial: [
     {
       id: 1,
-      name: "Denny Albuz",
-      designation: "CEO of Denish Co.",
+      name: "Zachary Burau",
+      designation: "Founder of Wanderift",
       comment:
-        "Best working experience  with this amazing team & in future, we want to work together",
+        "They are a team of great developers and did great work!Great guys as well!Does a great job.",
       avatar_url: Denny
     },
     {
       id: 2,
-      name: "Roman Ul Oman",
-      designation: "Co-founder of QatarDiaries",
+      name: "Naveed Ahmad",
+      designation: "Senior Manager Software Engineering at Capital One",
       comment:
-        "Impressed with master class support of the team and really look forward for the future.",
+        "Excellent Work, very happywith deliverables and communication.",
       avatar_url: Menny
     },
     {
       id: 3,
-      name: "Caroleane Mina",
-      designation: "Director of Beauty-queen",
+      name: "Max Motamedi",
+      designation: "President of Carpet Floors and More",
       comment:
-        "I have bought more than 10 themes on ThemeForest, and this is the first one I review. Wow! Amazing React Theme",
-      avatar_url: Denny
+        "Thank you very much for having my project done successfully.",
+      avatar_url: Max
     },
-    {
-      id: 4,
-      name: "Roman Ul Oman",
-      designation: "Co-founder of QatarDiaries",
-      comment:
-        "Impressed with master class support of the team and really look forward for the future.",
-      avatar_url: Menny
-    }
+    // {
+    //   id: 4,
+    //   name: "Roman Ul Oman",
+    //   designation: "Co-founder of QatarDiaries",
+    //   comment:
+    //     "Impressed with master class support of the team and really look forward for the future.",
+    //   avatar_url: Menny
+    // }
   ],
   faq: [
     {

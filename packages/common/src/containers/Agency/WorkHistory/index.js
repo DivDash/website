@@ -20,7 +20,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
             <FeatureBlock
               title={
                 <Heading
-                  content="Working With Knowledge, Passion, Heart & Soul "
+                  content="Motivation, HardWork & Passion are key to success "
                   {...title}
                 />
               }

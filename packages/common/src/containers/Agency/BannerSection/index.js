@@ -37,8 +37,8 @@ const BannerSection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>
-              <Text content="25% Discount" {...discountAmount} />
-              <Text content="on every first project budget" {...discountText} />
+              {/* <Text content="25% Discount" {...discountAmount} /> */}
+              {/* <Text content="on every first project budget" {...discountText} /> */}
             </DiscountLabel>
             <FeatureBlock
               title={
