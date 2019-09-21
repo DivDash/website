@@ -1,9 +1,24 @@
-import React from 'react';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+
+import React, { Fragment } from 'react';
+import Sticky from 'react-stickynode';
+import { Modal } from '@redq/reuse-modal';
+import { ThemeProvider } from 'styled-components';
+import { agencyTheme } from 'common/src/theme/agency';
+import { ResetCSS } from 'common/src/assets/css/style';
+import {
+  GlobalStyle,
+  AgencyWrapper,
+} from 'common/src/containers/Agency/agency.style';
+import Navbar from 'common/src/containers/Agency/Navbar';
+import Footer from 'common/src/containers/Agency/Footer';
+import { DrawerProvider } from 'common/src/contexts/DrawerContext';
+import '@redq/reuse-modal/es/index.css';
+import SEO from '../components/seo';
 
 class indexPage extends React.Component {
   render() {
@@ -12,51 +27,72 @@ class indexPage extends React.Component {
     console.log(posts);
 
     return (
-      <Layout>
-        <Helmet title={siteTitle} />
-        <div className="indexpage">
-          <div className="right-section blog-post">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-10 offset-md-1">
-                  {posts.map(({ node }) => {
-                    return (
-                      <article className="blog-listing" key={node.slug}>
-                        <div className="entry-meta-content">
-                          <h2 className="entry-title">
-                            <Link to={node.slug}>{node.title}</Link>
-                          </h2>
-                          <span className="entry-meta">
-                            <Link to="/about" className="authorname">
-                              {node.author}
-                            </Link>
-                          </span>
-                        </div>
-                        <div className="entry-media">
-                          <Img
-                            fluid={node.image[0].fluid}
-                            backgroundColor={'#f4f8fb'}
-                          />
-                        </div>
-                        <div className="entry-content-bottom">
-                          <p className="entry-content">{node.body.body}</p>
-                          <Link
-                            to={`blog/${node.slug}`}
-                            className="entry-read-more"
-                          >
-                            <span />
-                            Read More
-                          </Link>
-                        </div>
-                      </article>
-                    );
-                  })}
+      <ThemeProvider theme={agencyTheme}>
+        <Fragment>
+          <SEO title="Blog_Page" />
+          <Modal />
+          <ResetCSS />
+          <GlobalStyle />
+          <AgencyWrapper>
+            <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+              <DrawerProvider>
+                <Navbar />
+              </DrawerProvider>
+            </Sticky>
+            <Layout>
+              <br />
+              <br />
+              <br />
+              <Helmet title={siteTitle} />
+              <div className="indexpage">
+                <div className="right-section blog-post">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-10 offset-md-1">
+                        {posts.map(({ node }) => {
+                          return (
+                            <article className="blog-listing" key={node.slug}>
+                              <div className="entry-meta-content">
+                                <h2 className="entry-title">
+                                  <Link to={node.slug}>{node.title}</Link>
+                                </h2>
+                                <span className="entry-meta">
+                                  <Link to="/about" className="authorname">
+                                    {node.author}
+                                  </Link>
+                                </span>
+                              </div>
+                              <div className="entry-media">
+                                <Img
+                                  fluid={node.image[0].fluid}
+                                  backgroundColor={'#f4f8fb'}
+                                />
+                              </div>
+                              <div className="entry-content-bottom">
+                                <p className="entry-content">
+                                  {node.body.body}
+                                </p>
+                                <Link
+                                  to={`blog/${node.slug}`}
+                                  className="entry-read-more"
+                                >
+                                  <span />
+                                  Read More
+                                </Link>
+                              </div>
+                            </article>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </Layout>
+            </Layout>
+            <Footer />
+          </AgencyWrapper>
+        </Fragment>
+      </ThemeProvider>
     );
   }
 }
