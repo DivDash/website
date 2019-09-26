@@ -49,7 +49,7 @@ export default () => {
           <QualitySection />
           {/* <VideoSection /> */}
           <TestimonialSection />
-          <TeamSection />
+          {/* <TeamSection /> */}
           <FaqSection />
           <NewsletterSection />
           <Footer />

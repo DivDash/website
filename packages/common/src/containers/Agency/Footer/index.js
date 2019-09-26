@@ -32,8 +32,9 @@ const Footer = ({
               title="Agency"
               logoStyle={logoStyle}
             />
-            <Text content="redQ.Inc" {...textStyle} />
-            <Text content="+97 0267 5923" {...textStyle} />
+            <Text content="Telic Solutions" {...textStyle} />
+            <Text content={<a href="tel:+92-312-9259476">+92-312-9259476</a>} {...textStyle} />
+            <Text content={<a href="tel:+1 (734) 474-0243">+1 (734) 474-0243</a>} {...textStyle} />
           </Box>
           {/* End of footer logo column */}
           <Box {...colTwo}>

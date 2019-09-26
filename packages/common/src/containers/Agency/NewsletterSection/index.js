@@ -14,17 +14,19 @@ const NewsletterSection = ({ sectionHeader, sectionTitle, btnStyle }) => {
     <NewsletterSectionWrapper id="newsletterSection">
       <Container>
         <Box {...sectionHeader}>
-          <Heading content="Subscribe Newsletter" {...sectionTitle} />
+        <Heading content="Contact Us" {...sectionTitle} />
+        <br/>
+        <Heading content={<a href="mailto:contact@telicsolutions.com">contact@telicsolutions.com</a>} {...sectionTitle} />
         </Box>
         <Box>
-          <NewsletterForm>
-            <Input
+          {/* <NewsletterForm> */}
+            {/* <Input
               inputType="email"
               isMaterial={false}
               placeholder="Email Address"
-            />
-            <Button type="button" title="SEND MESSAGE" {...btnStyle} />
-          </NewsletterForm>
+            /> */}
+            {/* <Button type="button" title="SEND MESSAGE" {...btnStyle} /> */}
+          {/* </NewsletterForm> */}
         </Box>
       </Container>
     </NewsletterSectionWrapper>

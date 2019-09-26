@@ -7,7 +7,7 @@ import data from '../../../data/Agency/';
 const CopyrightSection = () => {
   return (
     <CopyrightWrapper className="copyright_section">
-      <ul>
+      {/* <ul>
         {data.social_profile.map((profile, index) => (
           <li key={`profile_key_${index}`}>
             <Link href="#1">
@@ -17,8 +17,8 @@ const CopyrightSection = () => {
             </Link>
           </li>
         ))}
-      </ul>
-      <Text content="Copyrights 2019 @RedQ Inc" />
+      </ul> */}
+      {/* <Text content="Copyrights 2019 @RedQ Inc" /> */}
     </CopyrightWrapper>
   );
 };

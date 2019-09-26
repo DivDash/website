@@ -19,11 +19,11 @@ const data = {
       path: '#workHistorySection',
       offset: '100',
     },
-    {
-      label: 'Portfolio',
-      path: '#blogSection',
-      offset: '100',
-    },
+    // {
+    //   label: 'Portfolio',
+    //   path: '#blogSection',
+    //   offset: '100',
+    // },
     {
       label: 'Quality feature',
       path: '#qualitySection',
@@ -34,11 +34,11 @@ const data = {
       path: '#testimonialSection',
       offset: '100',
     },
-    {
-      label: 'Team Member',
-      path: '#teamSection',
-      offset: '67',
-    },
+    // {
+    //   label: 'Team Member',
+    //   path: '#teamSection',
+    //   offset: '67',
+    // },
     {
       label: 'FAQ',
       path: '#faqSection',
