@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import './layout.css';
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -15,7 +15,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
       </>
     )}
   />

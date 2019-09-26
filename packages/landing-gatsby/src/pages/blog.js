@@ -19,6 +19,9 @@ import Footer from 'common/src/containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
+import '../components/layout.css';
+import '../components/base.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 class indexPage extends React.Component {
   render() {
@@ -48,13 +51,13 @@ class indexPage extends React.Component {
                 <div className="right-section blog-post">
                   <div className="container">
                     <div className="row">
-                      <div className="col-md-10 offset-md-1">
+                      <div className="blog-posts-wrapper">
                         {posts.map(({ node }) => {
                           return (
                             <article className="blog-listing" key={node.slug}>
                               <div className="entry-meta-content">
                                 <h2 className="entry-title">
-                                  <Link to={node.slug}>{node.title}</Link>
+                                  <Link to={`blog/${node.slug}`}>{node.title}</Link>
                                 </h2>
                                 <span className="entry-meta">
                                   <Link to="/about" className="authorname">
