@@ -21,7 +21,7 @@ export default () => {
   return (
     <ThemeProvider theme={agencyTheme}>
       <Fragment>
-        <SEO title="Second_Page" />
+        <SEO title="Telic Solutions" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />

@@ -29,7 +29,7 @@ export default () => {
   return (
     <ThemeProvider theme={agencyTheme}>
       <Fragment>
-        <SEO title="Agency" />
+        <SEO title="Telic Solutions" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />

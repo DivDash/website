@@ -1,7 +1,6 @@
 import React, { useState, useCallback, Fragment } from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-// import { Modal } from '@redq/reuse-modal';
 import { agencyTheme } from 'common/src/theme/agency';
 import { ResetCSS } from 'common/src/assets/css/style';
 import {
@@ -12,9 +11,13 @@ import Navbar from 'common/src/containers/Agency/Navbar';
 import Footer from 'common/src/containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
+
+
 import SEO from '../components/seo';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+
+
 import img1 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/1.png";
 import img2 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/2.png";
 import img3 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/3.png";
@@ -33,112 +36,145 @@ import img15 from "../../../common/src/assets/image/TelicSolutions picture/Image
 import img16 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/16.jpg";
 import img17 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/17.png";
 
-
-
-
-
+// const photos = [
+//   {
+//     src: img1,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img2,
+//     width: 1,
+//     height: 1
+//   },
+//   {
+//     src: img4,
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: img5,
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: img6,
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: img7,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img8,
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: img9,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img10,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img11,
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: img12,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img13,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img14,
+//     width: 3,
+//     height: 4
+//   },
+//   {
+//     src: img15,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img16,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img17,
+//     width: 4,
+//     height: 3
+//   },
+//   {
+//     src: img3,
+//     width: 4,
+//     height: 3
+//   }
+// ];
 
 
 const photos = [
   {
-    src: img1,
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
     width: 4,
     height: 3
   },
   {
-    src: img2,
+    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
     width: 1,
     height: 1
   },
   {
-    src: img4,
+    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
     width: 3,
     height: 4
   },
   {
-    src: img5,
+    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
     width: 3,
     height: 4
   },
   {
-    src: img6,
+    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
     width: 3,
     height: 4
   },
   {
-    src: img7,
+    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
     width: 4,
     height: 3
   },
   {
-    src: img8,
+    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
     width: 3,
     height: 4
   },
   {
-    src: img9,
+    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
     width: 4,
     height: 3
   },
   {
-    src: img10,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img11,
-    width: 3,
-    height: 4
-  },
-  {
-    src: img12,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img13,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img14,
-    width: 3,
-    height: 4
-  },
-  {
-    src: img15,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img16,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img17,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img3,
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   }
 ];
 
 
-
-
-
-
-
-
-
-
-
-
-export default () => {
+const WorkHistory = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -155,7 +191,7 @@ export default () => {
   return (
     <ThemeProvider theme={agencyTheme}>
       <Fragment>
-        <SEO title="Agency" />
+        <SEO title="Telic Solutions" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />
@@ -191,3 +227,6 @@ export default () => {
     </ThemeProvider>
   );
 };
+
+
+export default WorkHistory

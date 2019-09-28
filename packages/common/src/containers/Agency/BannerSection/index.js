@@ -7,6 +7,7 @@ import Button from 'reusecore/src/elements/Button';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
 import Particles from '../../Agency/Particle';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import BannerWrapper, { DiscountLabel } from './bannerSection.style';
 
 const BannerSection = ({
@@ -21,13 +22,15 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="LEARN MORE" {...btnStyle} />
-      <Button
+      <AnchorLink href={'#newsletterSection'}>
+        <Button title="Contact Us" {...btnStyle} />
+      </AnchorLink>
+      {/* <Button
         title="WATCH WORKS"
         variant="textButton"
         icon={<i className="flaticon-next" />}
         {...outlineBtnStyle}
-      />
+      /> */}
     </Fragment>
   );
   return (

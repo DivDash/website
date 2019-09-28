@@ -32,7 +32,7 @@ class indexPage extends React.Component {
     return (
       <ThemeProvider theme={agencyTheme}>
         <Fragment>
-          <SEO title="Blog_Page" />
+          <SEO title="Blog Page" />
           <Modal />
           <ResetCSS />
           <GlobalStyle />

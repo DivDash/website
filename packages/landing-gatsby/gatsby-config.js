@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `A react next landing page`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Software Development Company`,
+    description: `We would love to work on your idea as our next project. Here is a list of ideas that we have already turned into a reality!`,
+    author: `Telic Solutions`,
   },
   plugins: [
     {

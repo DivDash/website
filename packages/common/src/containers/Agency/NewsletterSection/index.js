@@ -82,16 +82,36 @@ class NewsletterSection extends React.Component {
       this.setError('Please enter email address')
     } else if (!validEmail) {
       this.setError('Please enter valid email address')
-    } else if (website === '') {
-      this.setError('Please enter valid webiste address')
     } else if (message === '') {
       this.setError('Please enter message')
     } else {
         console.log(this.state);
-        this.onChangeEmail("");
-        this.onChangeMessage("");
-        this.onChangeSite("");
-        this.setSuccess('Thankyou for contacting us.')
+        fetch('https://telicsolutions.com/api.php', {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          mode: 'same-origin', // no-cors, *cors, same-origin
+          cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: 'same-origin', // include, *same-origin, omit
+          headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: 'follow', // manual, *follow, error
+          referrer: 'no-referrer', // no-referrer, *client
+          body: JSON.stringify({
+            message: this.state.message,
+            email: this.state.email,
+          }) // body data type must match "Content-Type" header
+        })
+        .then((res)=>{
+          res.json().then((res)=>{
+            console.log(res);
+          })
+          
+          this.onChangeEmail("");
+          this.onChangeMessage("");
+          this.onChangeSite("");
+          this.setSuccess('Thankyou for contacting us.')
+        })
     }
   }
 
@@ -116,7 +136,7 @@ class NewsletterSection extends React.Component {
                   placeholder="Email Address"
                 />
               </div>
-              <div className="input-field-wrapper">
+              {/* <div className="input-field-wrapper">
                 <Input
                   inputType="text"
                   value={String(this.state.website)}
@@ -124,7 +144,7 @@ class NewsletterSection extends React.Component {
                   isMaterial={false}
                   placeholder="Enter Website"
                 />
-              </div>
+              </div> */}
               <div className="input-field-wrapper">
                 <Input
                   inputType="textarea"
