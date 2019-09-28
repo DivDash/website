@@ -20,13 +20,13 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
             <FeatureBlock
               title={
                 <Heading
-                  content="Motivation, HardWork & Passion are key to success "
+                  content="Allow us to introduce ourselves"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="We have worked with some leading agencies around the globe and their appreciation is our main strength ."
+                  content="We would love to work on your idea as our next project. Here is a list of ideas that we have already turned into a reality!"
                   {...description}
                 />
               }
@@ -37,19 +37,19 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
             <CounterUpArea>
               <Card className="card" {...cardStyle}>
                 <h3>
-                  <CountUp start={0} end={20} />+
+                  <CountUp start={0} end={10} />+
                 </h3>
                 <Text content="Companies Engaged" />
               </Card>
               <Card className="card" {...cardStyle}>
                 <h3>
-                  <CountUp start={0} end={199} duration={5} />
+                  <CountUp start={0} end={100} duration={5} />
                 </h3>
                 <Text content="Happy Customers" />
               </Card>
               <Card className="card" {...cardStyle}>
                 <h3>
-                  <CountUp start={0} end={300} duration={5} />+
+                  <CountUp start={0} end={15} duration={5} />+
                 </h3>
                 <Text content="Project Complete" />
               </Card>

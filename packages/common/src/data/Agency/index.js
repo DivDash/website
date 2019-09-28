@@ -115,30 +115,30 @@ const data = {
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      title: 'Planning',
       description:
-        'By using Search Engine Optimization, You will get more Clients.',
+        'We analyse your idea and plan the applications and/or websites needed to fulfil your needs.',
     },
     {
       id: 2,
       icon: 'flaticon-pencil-case',
-      title: 'Wireframing Task',
+      title: 'Designing',
       description:
-        'We respect our customer opinions and deals with them with perfect wireframing.',
+        'Our design team will prepare the most eloquent UI along with the most friendly UX your users will ever experience.',
     },
     {
       id: 3,
       icon: 'flaticon-ruler',
-      title: 'Ui/Ux Design',
+      title: 'Building',
       description:
-        'We provide the best UI/UX Design by following the latest trends of the market .',
+        'Now it comes down to building and implementing the idea according to the designs that have been prepared.',
     },
     {
       id: 4,
       icon: 'flaticon-briefing',
-      title: 'Content Writting',
+      title: 'Deployment',
       description:
-        'Proper Content Management is important to find out the real clients for your agencies .',
+        'Finally! Your idea is now a reality and we will provide maintenance and continuous update to ensure users get exactly what they want.',
     },
   ],
   blog: [
@@ -237,29 +237,30 @@ const data = {
   faq: [
     {
       id: 1,
-      expend: true,
       title: 'Which technologies does your company use?',
       description:
         'We have a diverse range of technologies that we use in our production apps depending on the desired platform. For more information, you can check out our about section.',
     },
     {
       id: 2,
-      title: 'App installation failed, how to update system information?',
+      expend: true,
+      title: 'Will you take any shares from my company?',
       description:
-        'Please read the documentation carefully . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum . ',
+        ' We do not take any equity or shares in any of the profit your idea is able to generate. We only charge for our services and make sure that you get the best quality.',
     },
     {
       id: 3,
-      title: 'Website reponse taking time, how to improve?',
+      title: 'How will I be able to convey my idea to you?',
       description:
-        'At first, Please check your internet connection . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum .',
+        ' You will sit with our team of designers and they will create a wireframe for your application. We will stay in touch with you and will ensure that each and every feature is finalised after your approval.',
     },
     {
       id: 4,
-      title: 'New update fixed all bug and issues?',
+      title: 'Okay, I’m interested. How do we get started?',
       description:
-        'We are giving the update of this theme continuously . You will receive an email Notification when we push an update. Always try to be updated with us .',
+        'Great! Contact us using the contact form given below.',
     },
+    
   ],
   menuWidget: [
     {

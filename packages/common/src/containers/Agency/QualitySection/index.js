@@ -36,13 +36,13 @@ const QualitySection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Our Quality feature that customers always prefer to use on their products."
+                  content="Our Methodology"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Customers are our first priority and we provide some exceptional features that our customer prefers . That's why our customers never leave us ."
+                  content="We never compromise on the quality of the final product. We make sure that your idea is manifested in reality exactly as you envision it. We follow you up on each and every step of the process."
                   {...description}
                 />
               }

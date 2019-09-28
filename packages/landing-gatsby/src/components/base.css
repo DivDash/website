@@ -605,10 +605,27 @@ form.contactForm > .actions {
   margin: auto;
 }
 
+.contact-form-input {
+  width: 50%;
+  margin: auto;
+}
+
+.input-field-wrapper {
+  margin: 25px 0;
+}
+
+.input-field-wrapper textarea {
+  height: 150px;
+}
+
 @media only screen and (max-width: 375px) {
   .blog-article-body {
     width: 90%;
     margin: auto;
+  }
+
+  .contact-form-input {
+    width: 100%;
   }
 
   .blog-posts-wrapper {
