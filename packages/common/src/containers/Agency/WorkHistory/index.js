@@ -30,7 +30,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
                   {...description}
                 />
               }
-              button={<Button title="WORK HISTORY" {...btnStyle} />}
+              button={<a href="/work-history"><Button title="WORK HISTORY" {...btnStyle} /></a>}
             />
           </Box>
           <Box className="col" {...col}>
@@ -55,7 +55,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
               </Card>
               <Card className="card" {...cardStyle}>
                 <Text content="& Much More" />
-                <Link href="#1">
+                <Link href="/work-history">
                   <a>View work history</a>
                 </Link>
               </Card>

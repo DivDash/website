@@ -632,3 +632,13 @@ form.contactForm > .actions {
     width: 95%;
   }
 }
+
+
+
+.galler-container {
+  margin: 55px 0;
+}
+
+div#lightboxBackdrop {
+  margin-top: 55px;
+}
