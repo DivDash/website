@@ -47,9 +47,9 @@ img {
   height: 4px;
   bottom: 18.8px;
   right: -3px;
-  content: "";
+  content: '';
   position: absolute;
-  content: "";
+  content: '';
 }
 
 #main-menu ul li:last-child:after {
@@ -75,7 +75,7 @@ section {
 }
 
 .header-wrapper:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   bottom: 0px;
@@ -215,7 +215,7 @@ section {
 }
 
 .blog-post .entry-read-more span {
-  content: "";
+  content: '';
   position: relative;
   width: 40px;
   background-color: #000;
@@ -343,7 +343,7 @@ section {
 }
 
 .author-box:not(:last-child):after {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   bottom: 0px;
@@ -401,22 +401,22 @@ form.contactForm .field label {
   text-transform: uppercase;
 }
 
-form.contactForm .field input[type="email"],
-form.contactForm .field input[type="password"],
-form.contactForm .field input[type="search"],
-form.contactForm .field input[type="tel"],
-form.contactForm .field input[type="text"],
-form.contactForm .field input[type="url"],
+form.contactForm .field input[type='email'],
+form.contactForm .field input[type='password'],
+form.contactForm .field input[type='search'],
+form.contactForm .field input[type='tel'],
+form.contactForm .field input[type='text'],
+form.contactForm .field input[type='url'],
 form.contactForm .field select {
   height: 2.75em;
 }
 
-form.contactForm .field input[type="email"],
-form.contactForm .field input[type="password"],
-form.contactForm .field input[type="search"],
-form.contactForm .field input[type="tel"],
-form.contactForm .field input[type="text"],
-form.contactForm .field input[type="url"],
+form.contactForm .field input[type='email'],
+form.contactForm .field input[type='password'],
+form.contactForm .field input[type='search'],
+form.contactForm .field input[type='tel'],
+form.contactForm .field input[type='text'],
+form.contactForm .field input[type='url'],
 form.contactForm .field select,
 form.contactForm .field textarea {
   -moz-appearance: none;
@@ -467,9 +467,9 @@ form.contactForm > .actions {
 
 .contactForm .button,
 .contactForm button,
-.contactForm input[type="button"],
-.contactForm input[type="reset"],
-.contactForm input[type="submit"] {
+.contactForm input[type='button'],
+.contactForm input[type='reset'],
+.contactForm input[type='submit'] {
   -moz-appearance: none;
   -ms-appearance: none;
   -webkit-appearance: none;
@@ -497,9 +497,9 @@ form.contactForm > .actions {
 
 .contactForm .button.special,
 .contactForm button.special,
-.contactForm input[type="button"].special,
-.contactForm input[type="reset"].special,
-.contactForm input[type="submit"].special {
+.contactForm input[type='button'].special,
+.contactForm input[type='reset'].special,
+.contactForm input[type='submit'].special {
   background-color: #f4f8fb;
   box-shadow: none;
   color: #242943;
@@ -509,12 +509,12 @@ form.contactForm > .actions {
 .contactForm .button:hover,
 .contactForm button:active,
 .contactForm button:hover,
-.contactForm input[type="button"]:active,
-.contactForm input[type="button"]:hover,
-.contactForm input[type="reset"]:active,
-.contactForm input[type="reset"]:hover,
-.contactForm input[type="submit"]:active,
-.contactForm input[type="submit"]:hover {
+.contactForm input[type='button']:active,
+.contactForm input[type='button']:hover,
+.contactForm input[type='reset']:active,
+.contactForm input[type='reset']:hover,
+.contactForm input[type='submit']:active,
+.contactForm input[type='submit']:hover {
   background-color: #34495e;
   color: #fff !important;
 }
@@ -564,7 +564,7 @@ form.contactForm > .actions {
 
 /* success page */
 .successpage {
-  background-image: url("../images/thanyoubg.png");
+  background-image: url('../images/thanyoubg.png');
   background-repeat: no-repeat;
   background-position: center;
   padding: 210px 0;
@@ -633,12 +633,10 @@ form.contactForm > .actions {
   }
 }
 
-
-
 .galler-container {
   margin: 55px 0;
 }
 
 div#lightboxBackdrop {
-  margin-top: 55px;
+  z-index: 10000;
 }
