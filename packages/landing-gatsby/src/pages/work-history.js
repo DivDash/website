@@ -12,134 +12,117 @@ import Footer from 'common/src/containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
 
-
 import SEO from '../components/seo';
 import Gallery from 'react-grid-gallery';
 
-import img1 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/1.png";
-import img2 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/2.png";
-import img3 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/3.png";
-import img4 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/4.png";
-import img5 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/5.jpg";
-import img6 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/6.jpg";
-import img7 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/7.png";
-import img8 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/8.png";
-import img9 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/9.png";
-import img10 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/10.jpg";
-import img11 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/11.png";
-import img12 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/12.png";
-import img13 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/13.png";
-import img14 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/14.png";
-import img15 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/15.png";
-import img16 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/16.jpg";
-import img17 from "../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/17.png";
+import img1 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/1.png';
+import img2 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/2.png';
+import img3 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/3.png';
+import img4 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/4.png';
+import img5 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/5.jpg';
+import img6 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/6.jpg';
+import img7 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/7.jpg';
+import img8 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/8.png';
+import img9 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/9.png';
+import img10 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/10.jpg';
+import img11 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/11.png';
+import img12 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/12.png';
+import img13 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/13.png';
+
+import T1 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T1.png';
+import T2 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T2.png';
+import T3 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T3.png';
+import T4 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T4.png';
+import T5 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T5.png';
+import T6 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T6.png';
+import T7 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T7.png';
+import T8 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T8.png';
+import T9 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T9.png';
+import T10 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T10.png';
+import T11 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T11.png';
+import T12 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T12.png';
+import T13 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T13.png';
 
 const photos = [
   {
     src: img1,
-    thumbnail: img1,
+    thumbnail: T1,
     thumbnailWidth: 320,
     thumbnailHeight: 174,
   },
   {
     src: img2,
-    thumbnail: img2,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img4,
-    thumbnail: img4,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img5,
-    thumbnail: img5,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img6,
-    thumbnail: img6,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img7,
-    thumbnail: img7,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img8,
-    thumbnail: img8,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img9,
-    thumbnail: img9,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img10,
-    thumbnail: img10,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img11,
-    thumbnail: img11,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img12,
-    thumbnail: img12,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img13,
-    thumbnail: img13,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img14,
-    thumbnail: img14,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img15,
-    thumbnail: img15,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img16,
-    thumbnail: img16,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-  },
-  {
-    src: img17,
-    thumbnail: img17,
+    thumbnail: T2,
     thumbnailWidth: 320,
     thumbnailHeight: 174,
   },
   {
     src: img3,
-    thumbnail: img3,
+    thumbnail: T3,
     thumbnailWidth: 320,
     thumbnailHeight: 174,
-  }
+  },
+  {
+    src: img4,
+    thumbnail: T4,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img5,
+    thumbnail: T5,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img6,
+    thumbnail: T6,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img7,
+    thumbnail: T7,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img8,
+    thumbnail: T8,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img9,
+    thumbnail: T9,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img10,
+    thumbnail: T10,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img11,
+    thumbnail: T11,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img12,
+    thumbnail: T12,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
+  {
+    src: img13,
+    thumbnail: T13,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+  },
 ];
-
-
 
 // const IMAGES =
 // [{
@@ -161,8 +144,6 @@ const photos = [
 //         thumbnailWidth: 320,
 //         thumbnailHeight: 212
 // }]
-
-
 
 const WorkHistory = () => {
   return (
@@ -189,5 +170,4 @@ const WorkHistory = () => {
   );
 };
 
-
-export default WorkHistory
+export default WorkHistory;
