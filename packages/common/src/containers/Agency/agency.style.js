@@ -168,7 +168,7 @@ const AgencyWrapper = styled.div`
     .hamburgMenu__bar {
       margin-left: 8px;
       > span {
-        background-color: ${themeGet('colors.white', '#ffffff')};
+        background-color: orange;
         @media only screen and (max-width: 480px) {
           background-color: ${themeGet('colors.primary', '#10ac84')};
         }

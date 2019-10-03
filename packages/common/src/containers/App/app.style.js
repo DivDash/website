@@ -247,7 +247,7 @@ const AppWrapper = styled.div`
         }
       }
       .hamburgMenu__bar > span {
-        background-color: ${themeGet('colors.primary', '#1a73e8')};
+        background-color: ${themeGet('colors.primary', '#orange')};
       }
     }
   }

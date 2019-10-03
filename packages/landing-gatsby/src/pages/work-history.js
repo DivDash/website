@@ -161,9 +161,11 @@ const WorkHistory = () => {
             </DrawerProvider>
           </Sticky>
           <div className="galler-container">
+            <h1 style={{textAlign: "center"}}>Work History</h1>
             <Gallery images={photos} />
           </div>
         </AgencyWrapper>
+        <Footer />
         {/* End of agency wrapper section */}
       </Fragment>
     </ThemeProvider>

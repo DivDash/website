@@ -618,6 +618,12 @@ form.contactForm > .actions {
   height: 150px;
 }
 
+.galler-container {
+  margin: 100px auto;
+  width: 80%;
+}
+
+
 @media only screen and (max-width: 375px) {
   .blog-article-body {
     width: 90%;
@@ -631,12 +637,15 @@ form.contactForm > .actions {
   .blog-posts-wrapper {
     width: 95%;
   }
-}
-
-.galler-container {
-  margin: 55px 0;
+  .galler-container {
+    width: 100%;
+  }
 }
 
 div#lightboxBackdrop {
   z-index: 10000;
+}
+
+.ReactGridGallery_tile-viewport img {
+  margin-left: 0!important;
 }
