@@ -10,6 +10,7 @@ const FooterWrapper = styled.section`
   background-position: center 50px;
   border-top: 1px solid #efefef;
   overflow: hidden;
+  text-align: center;
   @media (max-width: 990px) {
     padding-bottom: 30px;
   }
