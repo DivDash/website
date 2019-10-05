@@ -44,7 +44,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
               </Card>
               <Card className="card" {...cardStyle}>
                 <h3>
-                  <CountUp start={0} end={100} duration={5} />+
+                  <CountUp start={0} end={100} duration={5} />
                 </h3>
                 <Text content="Happy Customers" />
               </Card>
@@ -75,7 +75,7 @@ WorkHistory.propTypes = {
   sectionSubTitle: PropTypes.object,
   row: PropTypes.object,
   col: PropTypes.object,
-  cardStyle: PropTypes.object
+  cardStyle: PropTypes.object,
 };
 
 // WorkHistory default style
@@ -85,7 +85,7 @@ WorkHistory.defaultProps = {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
-    mr: '-15px'
+    mr: '-15px',
   },
   // WorkHistory section col default style
   col: {
@@ -93,13 +93,13 @@ WorkHistory.defaultProps = {
     pl: '15px',
     width: [1, 1, 1 / 2, 1 / 2],
     flexBox: true,
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   // Card default style
   cardStyle: {
     p: ['20px 20px', '30px 20px', '30px 20px', '53px 40px'],
     borderRadius: '10px',
-    boxShadow: '0px 8px 20px 0px rgba(16, 66, 97, 0.07)'
+    boxShadow: '0px 8px 20px 0px rgba(16, 66, 97, 0.07)',
   },
   // WorkHistory section title default style
   title: {
@@ -108,21 +108,21 @@ WorkHistory.defaultProps = {
     fontWeight: '300',
     color: '#0f2137',
     letterSpacing: '-0.025em',
-    mb: '20px'
+    mb: '20px',
   },
   // WorkHistory section description default style
   description: {
     fontSize: '16px',
     color: '#343d48cc',
     lineHeight: '1.75',
-    mb: '33px'
+    mb: '33px',
   },
   // Button default style
   btnStyle: {
     minWidth: '156px',
     fontSize: '14px',
-    fontWeight: '500'
-  }
+    fontWeight: '500',
+  },
 };
 
 export default WorkHistory;

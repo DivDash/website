@@ -42,7 +42,7 @@ import T10 from '../../../common/src/assets/image/TelicSolutions picture/Images 
 import T11 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T11.png';
 import T12 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T12.png';
 import T13 from '../../../common/src/assets/image/TelicSolutions picture/Images Backup/clients/T13.png';
-import '../components/base.css'
+import '../components/base.css';
 const photos = [
   {
     src: img1,
@@ -160,8 +160,8 @@ const WorkHistory = () => {
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <div className="galler-container">
-            <h1 style={{textAlign: "center"}}>Work History</h1>
+          <div style={{ margin: '100px auto' }}>
+            <h1 style={{ textAlign: 'center' }}>Work History</h1>
             <Gallery images={photos} />
           </div>
         </AgencyWrapper>
