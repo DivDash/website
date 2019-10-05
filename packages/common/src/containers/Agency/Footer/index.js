@@ -38,7 +38,7 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
           </Box>
           {/* End of footer logo column */}
           <Box className="col" {...col}>
-            <Heading content="About Us" {...titleStyle} />
+            <Heading content="Site Map" {...titleStyle} />
             <List>
               {data.menuItems.map(item => (
                 <ListItem key={`list__item-${item.id}`}>
@@ -51,8 +51,7 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
           </Box>
           {/* End of footer List column */}
           <Box className="col" {...col}>
-            <Heading content="Contact Us" />
-            <Text content="Phone:" {...titleStyle} />
+            <Heading content="Phone:" {...titleStyle} />
             <Text
               content={<a href="tel:+92-321-9259476">+92-321-9259476</a>}
               {...textStyle}
@@ -61,13 +60,13 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
               content={<a href="tel:+1 (734) 474-0243">+1 (734) 474-0243</a>}
               {...textStyle}
             />
-            <Text content="Address:" {...textStyle} />
+            <Heading content="Address:" {...titleStyle} />
             <Text
               content={
-                <p>
+                <a target="_blank" href="https://goo.gl/maps/YUxnZKgKz5r4SH7y6">
                   11-Haider Plaza, 3rd Floor, Rashid Minhas Road,
                   Gulshan-e-Iqbal-5, Karachi.
-                </p>
+                </a>
               }
               {...textStyle}
             />
