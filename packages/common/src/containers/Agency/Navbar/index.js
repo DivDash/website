@@ -88,6 +88,8 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
     });
   };
 
+  console.log(data);
+  
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>

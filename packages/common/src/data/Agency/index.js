@@ -260,7 +260,7 @@ const data = {
       description: 'Great! Contact us using the contact form given below.'
     }
   ],
-  menuItems: [
+  footerItems: [
     {
       id: 1,
       url: '/work-history',

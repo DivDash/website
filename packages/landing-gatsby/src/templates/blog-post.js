@@ -52,7 +52,7 @@ class BlogPostTemplate extends Component {
                       </div>
                       <div className="blog-article-body">
                       <h1 className="section-headline"> {title} </h1>
-                      <p> {tags} </p>
+                      {/* <p> {tags} </p> */}
                       <div
                         dangerouslySetInnerHTML={{
                           __html: body.body,

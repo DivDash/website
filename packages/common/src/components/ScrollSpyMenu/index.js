@@ -63,7 +63,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
           )}
         </li>
       ))}
-      <li class=""><a href="/blog">Blog</a></li>
+      <li className=""><a href="/blog">Blog</a></li>
     </Scrollspy>
   );
 };

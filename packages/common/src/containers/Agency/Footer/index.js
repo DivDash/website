@@ -6,6 +6,7 @@ import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
 import Logo from 'reusecore/src/elements/UI/Logo';
 import Container from '../../../components/UI/Container';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import FooterWrapper, { List, ListItem } from './footer.style';
 
 import LogoImage from '../../../assets/image/agency/logo.png';
@@ -40,13 +41,25 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
           <Box className="col" {...col}>
             <Heading content="Site Map" {...titleStyle} />
             <List>
-              {data.menuItems.map(item => (
-                <ListItem key={`list__item-${item.id}`}>
-                  <Link href={item.url}>
-                    <a className="ListItem">{item.text}</a>
-                  </Link>
-                </ListItem>
-              ))}
+              {data.footerItems.map(item => {
+                if (item.url[0] === '#') {
+                  return (
+                    <ListItem key={`list__item-${item.id}`}>
+                      <AnchorLink href={`${item.url}`}>
+                        <a className="ListItem">{item.text}</a>
+                      </AnchorLink>
+                    </ListItem>
+                  )
+                } else {
+                  return (
+                    <ListItem key={`list__item-${item.id}`}>
+                      <a href={`${item.url}`}>
+                        <a className="ListItem">{item.text}</a>
+                      </a>
+                    </ListItem>
+                  )
+                }
+              })}
             </List>
           </Box>
           {/* End of footer List column */}
