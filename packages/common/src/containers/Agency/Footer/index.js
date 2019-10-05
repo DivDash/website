@@ -12,27 +12,47 @@ import LogoImage from '../../../assets/image/agency/logo.png';
 
 import data from '../../../data/Agency';
 
-const Footer = ({
-  row,
-  col,
-  colOne,
-  colTwo,
-  titleStyle,
-  logoStyle,
-  textStyle
-}) => {
+const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
   return (
     <FooterWrapper id="footerSection">
       <Container>
         <Box className="row" {...row}>
-          <Box {...colOne}>
+          <Box {...col} className="col">
             <Logo
               href="#"
               logoSrc={LogoImage}
               title="Agency"
               logoStyle={logoStyle}
             />
-            <Text content="Telic Solutions" {...textStyle} />
+            <Heading content="Telic Solutions" {...titleStyle} />
+            <Text
+              content={
+                <p>
+                  Telic Solutions is a software house based in Pakistan. We are
+                  a young IT company and we want to focus on the ideas popping
+                  up in our markets.
+                </p>
+              }
+              {...textStyle}
+            />
+          </Box>
+          {/* End of footer logo column */}
+          <Box className="col" {...col}>
+            <Heading content="About Us" {...titleStyle} />
+            <List>
+              {data.menuItems.map(item => (
+                <ListItem key={`list__item-${item.id}`}>
+                  <Link href={item.url}>
+                    <a className="ListItem">{item.text}</a>
+                  </Link>
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+          {/* End of footer List column */}
+          <Box className="col" {...col}>
+            <Heading content="Contact Us" />
+            <Text content="Phone:" {...titleStyle} />
             <Text
               content={<a href="tel:+92-321-9259476">+92-321-9259476</a>}
               {...textStyle}
@@ -41,23 +61,16 @@ const Footer = ({
               content={<a href="tel:+1 (734) 474-0243">+1 (734) 474-0243</a>}
               {...textStyle}
             />
-          </Box>
-          {/* End of footer logo column */}
-          <Box {...colTwo}>
-            {data.menuWidget.map(widget => (
-              <Box className="col" {...col} key={widget.id}>
-                <Heading content={widget.title} {...titleStyle} />
-                <List>
-                  {widget.menuItems.map(item => (
-                    <ListItem key={`list__item-${item.id}`}>
-                      <Link href={item.url}>
-                        <a className="ListItem">{item.text}</a>
-                      </Link>
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
-            ))}
+            <Text content="Address:" {...textStyle} />
+            <Text
+              content={
+                <p>
+                  11-Haider Plaza, 3rd Floor, Rashid Minhas Road,
+                  Gulshan-e-Iqbal-5, Karachi.
+                </p>
+              }
+              {...textStyle}
+            />
           </Box>
           {/* End of footer List column */}
         </Box>
@@ -70,8 +83,6 @@ const Footer = ({
 Footer.propTypes = {
   row: PropTypes.object,
   col: PropTypes.object,
-  colOne: PropTypes.object,
-  colTwo: PropTypes.object,
   titleStyle: PropTypes.object,
   textStyle: PropTypes.object,
   logoStyle: PropTypes.object
@@ -86,23 +97,9 @@ Footer.defaultProps = {
     ml: '-4px',
     mr: '-4px'
   },
-  // Footer col one style
-  colOne: {
-    width: ['100%', '30%', '35%', '23%'],
-    mt: [0, '13px'],
-    mb: ['30px', 0],
-    pl: ['15px', 0],
-    pr: ['15px', '15px', 0]
-  },
-  // Footer col two style
-  colTwo: {
-    width: ['100%', '70%', '65%', '77%'],
-    flexBox: true,
-    flexWrap: 'wrap'
-  },
   // Footer col default style
   col: {
-    width: ['100%', '50%', '50%', '25%'],
+    width: ['100%', '33%', '33%', '33%'],
     pl: '15px',
     pr: '15px',
     mb: '30px'
