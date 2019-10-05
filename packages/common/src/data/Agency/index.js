@@ -70,35 +70,35 @@ const data = {
   features: [
     {
       id: 1,
-      icon: 'flaticon-flask',
+      icon: 'flaticon-startup',
       title: 'Uber for X',
       description:
         "Do you have an idea which follows the 'Uber for X' business model? Do you want to make the next Careem, Bykea or AirBNB? Well look no further! Tell us about your requirements and application ideas and we will help turn your idea into a reality!"
     },
     {
       id: 2,
-      icon: 'flaticon-pencil-case',
+      icon: 'flaticon-user',
       title: 'Social Media',
       description:
         'Websites like Facebook, Instagram and Snapchat are used daily by literally billions of users. If you have an idea similar to these companies, you can discuss them with us and we will help you create your own social media platform.'
     },
     {
       id: 3,
-      icon: 'flaticon-ruler',
+      icon: 'flaticon-briefing',
       title: 'Online Store & Delivery',
       description:
         'We can help create an online presence for your business or restaurant. Whether it be a delivery service application or an online store or both, we will help you to expand your customer reach.'
     },
     {
       id: 4,
-      icon: 'flaticon-startup',
+      icon: 'flaticon-stopwatch',
       title: 'Virtual Classroom',
       description:
         'If you are an educational institute or teacher looking to teach to a wider audience or create a network of teachers, we can help you create an online virtual system for your classes.'
     },
     {
       id: 5,
-      icon: 'flaticon-briefing',
+      icon: 'flaticon-wallet',
       title: 'Freelance Market Place',
       description:
         'Freelance websites offer a market place for clients and service providers to meet. The services can range from website development to plumbing and painting. We can help you create the entire system for the marketplace to function well.'
