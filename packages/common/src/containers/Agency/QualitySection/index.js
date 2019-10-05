@@ -26,7 +26,7 @@ const QualitySection = ({
   imageWrapper,
   featureTitle,
   featureDescription,
-  iconStyle,
+  iconStyle
 }) => {
   return (
     <QualitySectionWrapper id="qualitySection">
@@ -34,15 +34,10 @@ const QualitySection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col} {...textArea}>
             <FeatureBlock
-              title={
-                <Heading
-                  content="Our Methodology"
-                  {...title}
-                />
-              }
+              title={<Heading content="Our Methodology" {...title} />}
               description={
                 <Text
-                  content="We never compromise on the quality of the final product. We make sure that your idea is manifested in reality exactly as you envision it. We follow you up on each and every step of the process."
+                  content="We never compromise on the quality of the final product. We make sure that your idea is manifested in reality exactly as you have envisioned it. We follow you up on each and every step of the process."
                   {...description}
                 />
               }
@@ -90,7 +85,7 @@ QualitySection.propTypes = {
   featureCol: PropTypes.object,
   title: PropTypes.object,
   description: PropTypes.object,
-  button: PropTypes.object,
+  button: PropTypes.object
 };
 
 QualitySection.defaultProps = {
@@ -99,36 +94,36 @@ QualitySection.defaultProps = {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
-    mr: '-15px',
+    mr: '-15px'
   },
   // Quality section iamge row default style
   imageAreaRow: {
-    flexDirection: 'row-reverse',
+    flexDirection: 'row-reverse'
   },
   // Quality section col default style
   col: {
     pr: '15px',
-    pl: '15px',
+    pl: '15px'
   },
   // Quality feature col default style
   featureCol: {
     width: [1, 1, 1 / 2],
     pr: '15px',
-    pl: '15px',
+    pl: '15px'
   },
   // Quality section text area default style
   textArea: {
-    width: [1, '100%', '100%', '70%', '64%'],
+    width: [1, '100%', '100%', '70%', '64%']
   },
   // Quality section image area default style
   imageArea: {
     width: [1, '100%', '100%', '30%', '38%'],
     flexBox: true,
-    flexDirection: 'row-reverse',
+    flexDirection: 'row-reverse'
   },
   // Quality section image wrapper default style
   imageWrapper: {
-    boxShadow: 'none',
+    boxShadow: 'none'
   },
   // Quality section title default style
   title: {
@@ -137,14 +132,14 @@ QualitySection.defaultProps = {
     fontWeight: '300',
     color: '#0f2137',
     letterSpacing: '-0.025em',
-    mb: '20px',
+    mb: '20px'
   },
   // Quality section description default style
   description: {
     fontSize: '16px',
     color: '#343d48cc',
     lineHeight: '2.1',
-    mb: '33px',
+    mb: '33px'
   },
   // feature icon default style
   iconStyle: {
@@ -160,7 +155,7 @@ QualitySection.defaultProps = {
     overflow: 'hidden',
     mt: '6px',
     mr: '22px',
-    flexShrink: 0,
+    flexShrink: 0
   },
   // feature title default style
   featureTitle: {
@@ -169,14 +164,14 @@ QualitySection.defaultProps = {
     color: '#0f2137',
     lineHeight: '1.5',
     mb: '8px',
-    letterSpacing: '-0.020em',
+    letterSpacing: '-0.020em'
   },
   // feature description default style
   featureDescription: {
     fontSize: '15px',
     lineHeight: '1.84',
-    color: '#343d48cc',
-  },
+    color: '#343d48cc'
+  }
 };
 
 export default QualitySection;
