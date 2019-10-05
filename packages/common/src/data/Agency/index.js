@@ -263,28 +263,28 @@ const data = {
   menuItems: [
     {
       id: 1,
-      url: '#1',
-      text: 'Support Center'
+      url: '/work-history',
+      text: 'Work History'
     },
     {
       id: 2,
-      url: '#2',
-      text: 'Customer Support'
+      url: '/blog',
+      text: 'Blog'
     },
     {
       id: 3,
-      url: '#3',
-      text: 'About Us'
+      url: '#featureSection',
+      text: 'Our Services'
     },
     {
       id: 4,
-      url: '#4',
-      text: 'Copyright'
+      url: '#qualitySection',
+      text: 'Methodology'
     },
     {
       id: 5,
-      url: '#5',
-      text: 'Popular Campaign'
+      url: '#testimonialSection',
+      text: 'Client Review'
     }
   ],
   social_profile: [
