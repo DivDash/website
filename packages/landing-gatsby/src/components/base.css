@@ -585,9 +585,20 @@ form.contactForm > .actions {
   letter-spacing: 0.5px;
 }
 
-.blog-article-body {
-  width: 80%;
+.blog-article-body .entry-media img {
+  border-radius: 8px;
+}
+
+.blog-post-body .blog-content {
+  text-size-adjust: 12;
+}
+
+.blog-post-body {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 70%;
   margin: auto;
+  text-align: left;
 }
 
 .blog-post-body {
@@ -622,11 +633,11 @@ form.contactForm > .actions {
   width: 80%;
 }
 
-
 @media only screen and (max-width: 375px) {
   .blog-article-body {
     width: 90%;
     margin: auto;
+    text-align: left;
   }
 
   .contact-form-input {
@@ -646,5 +657,5 @@ div#lightboxBackdrop {
 }
 
 .ReactGridGallery_tile-viewport img {
-  margin-left: 0!important;
+  margin-left: 0 !important;
 }

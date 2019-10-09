@@ -13,7 +13,7 @@ import {
   GlobalStyle,
   AgencyWrapper,
 } from 'common/src/containers/Agency/agency.style';
-import Navbar from 'common/src/containers/Agency/Navbar';
+import Navbar from 'common/src/containers/Agency/Blog/Navbar';
 import Footer from 'common/src/containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
@@ -25,7 +25,7 @@ import '../components/base.css';
 class BlogPostTemplate extends Component {
   render() {
     const post = get(this, 'props.data.contentfulBlogPost');
-    const { title, body, image, tags } = post;
+    const { title, body, image } = post;
     return (
       <Template>
         <ThemeProvider theme={agencyTheme}>
@@ -48,16 +48,20 @@ class BlogPostTemplate extends Component {
                   <div className="row">
                     <div className="blog-post-body">
                       <div className="entry-media">
-                        <Img fluid={image[0].fluid} backgroundColor={'#f4f8fb'} />
+                        <Img
+                          fluid={image[0].fluid}
+                          backgroundColor={'#f4f8fb'}
+                        />
                       </div>
                       <div className="blog-article-body">
-                      <h1 className="section-headline"> {title} </h1>
-                      {/* <p> {tags} </p> */}
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: body.body,
-                        }}
-                      />
+                        <h1 className="section-headline"> {title} </h1>
+                        {/* <p> {tags} </p> */}
+                        <div
+                          className="blog-content"
+                          dangerouslySetInnerHTML={{
+                            __html: body.body,
+                          }}
+                        />
                       </div>
                     </div>
                   </div>

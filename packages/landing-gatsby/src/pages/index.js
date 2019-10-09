@@ -11,12 +11,8 @@ import {
 import Navbar from 'common/src/containers/Agency/Navbar';
 import BannerSection from 'common/src/containers/Agency/BannerSection';
 import FeatureSection from 'common/src/containers/Agency/FeatureSection';
-import AboutUsSection from 'common/src/containers/Agency/AboutUsSection';
 import WorkHistory from 'common/src/containers/Agency/WorkHistory';
-import BlogSection from 'common/src/containers/Agency/BlogSection';
 import TestimonialSection from 'common/src/containers/Agency/TestimonialSection';
-import TeamSection from 'common/src/containers/Agency/TeamSection';
-import VideoSection from 'common/src/containers/Agency/VideoSection';
 import FaqSection from 'common/src/containers/Agency/FaqSection';
 import NewsletterSection from 'common/src/containers/Agency/NewsletterSection';
 import QualitySection from 'common/src/containers/Agency/QualitySection';

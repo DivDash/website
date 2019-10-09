@@ -14,7 +14,7 @@ import {
   GlobalStyle,
   AgencyWrapper,
 } from 'common/src/containers/Agency/agency.style';
-import Navbar from 'common/src/containers/Agency/Navbar';
+import Navbar from 'common/src/containers/Agency/Blog/Navbar';
 import Footer from 'common/src/containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
@@ -57,7 +57,9 @@ class indexPage extends React.Component {
                             <article className="blog-listing" key={node.slug}>
                               <div className="entry-meta-content">
                                 <h2 className="entry-title">
-                                  <Link to={`blog/${node.slug}`}>{node.title}</Link>
+                                  <Link to={`blog/${node.slug}`}>
+                                    {node.title}
+                                  </Link>
                                 </h2>
                                 <span className="entry-meta">
                                   <Link to="/about" className="authorname">

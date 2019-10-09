@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
@@ -25,13 +24,14 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
               title="Agency"
               logoStyle={logoStyle}
             />
-            <Heading content="Telic Solutions" {...titleStyle} />
+            {/* <Heading content="Telic Solutions" {...titleStyle} /> */}
             <Text
               content={
                 <p>
-                  Telic Solutions is a software house based in Pakistan. We are
-                  a young IT company and we want to focus on the ideas popping
-                  up in our markets.
+                  We are Leading the IT industry with best Long Term
+                  Relationships, working on most Efficient and Advance
+                  Technology. Our goal is to focus on the ideas popping up in
+                  our markets.
                 </p>
               }
               {...textStyle}
@@ -49,7 +49,7 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
                         <a className="ListItem">{item.text}</a>
                       </AnchorLink>
                     </ListItem>
-                  )
+                  );
                 } else {
                   return (
                     <ListItem key={`list__item-${item.id}`}>
@@ -57,7 +57,7 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
                         <a className="ListItem">{item.text}</a>
                       </a>
                     </ListItem>
-                  )
+                  );
                 }
               })}
             </List>
@@ -65,10 +65,10 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
           {/* End of footer List column */}
           <Box className="col" {...col}>
             <Heading content="Phone:" {...titleStyle} />
-            <Text
+            {/* <Text
               content={<a href="tel:+92-321-9259476">+92-321-9259476</a>}
               {...textStyle}
-            />
+            /> */}
             <Text
               content={<a href="tel:+1 (734) 474-0243">+1 (734) 474-0243</a>}
               {...textStyle}
@@ -77,8 +77,7 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
             <Text
               content={
                 <a target="_blank" href="https://goo.gl/maps/YUxnZKgKz5r4SH7y6">
-                  11-Haider Plaza, 3rd Floor, Rashid Minhas Road,
-                  Gulshan-e-Iqbal-5, Karachi.
+                  2072 Windmill Way Unit #3, Saline, MI 48176, USA.
                 </a>
               }
               {...textStyle}
@@ -97,7 +96,7 @@ Footer.propTypes = {
   col: PropTypes.object,
   titleStyle: PropTypes.object,
   textStyle: PropTypes.object,
-  logoStyle: PropTypes.object
+  logoStyle: PropTypes.object,
 };
 
 // Footer default style
@@ -107,32 +106,32 @@ Footer.defaultProps = {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-4px',
-    mr: '-4px'
+    mr: '-4px',
   },
   // Footer col default style
   col: {
     width: ['100%', '33%', '33%', '33%'],
     pl: '15px',
     pr: '15px',
-    mb: '30px'
+    mb: '30px',
   },
   // widget title default style
   titleStyle: {
     color: '#343d48',
     fontSize: '16px',
-    fontWeight: '700'
+    fontWeight: '700',
   },
   // Default logo size
   logoStyle: {
     width: '128px',
-    mb: '15px'
+    mb: '15px',
   },
   // widget text default style
   textStyle: {
     color: '#0f2137',
     fontSize: '16px',
-    mb: '10px'
-  }
+    mb: '10px',
+  },
 };
 
 export default Footer;
