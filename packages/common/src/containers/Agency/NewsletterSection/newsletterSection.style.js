@@ -18,7 +18,6 @@ const NewsletterForm = styled.div`
     flex-direction: column;
     max-width: 100%;
   }
-
   .reusecore__input {
     flex: 1;
     margin-right: 20px;
@@ -45,7 +44,6 @@ const NewsletterForm = styled.div`
       }
     }
   }
-
   .reusecore__button {
     flex-shrink: 0;
     transition: all 0.3s ease;

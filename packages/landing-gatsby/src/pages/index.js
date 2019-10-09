@@ -39,18 +39,13 @@ export default () => {
           </Sticky>
           <BannerSection />
           <FeatureSection />
-          {/* <AboutUsSection /> */}
           <WorkHistory />
-          {/* <BlogSection /> */}
           <QualitySection />
-          {/* <VideoSection /> */}
           <TestimonialSection />
-          {/* <TeamSection /> */}
           <FaqSection />
           <NewsletterSection />
           <Footer />
         </AgencyWrapper>
-        {/* End of agency wrapper section */}
       </Fragment>
     </ThemeProvider>
   );
