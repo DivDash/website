@@ -56,9 +56,9 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
               </Card>
               <Card className="card" {...cardStyle}>
                 <Text content="& Much More" />
-                <Link href="/work-history">
+                <a href="/work-history">
                   <a>View work history</a>
-                </Link>
+                </a>
               </Card>
             </CounterUpArea>
           </Box>
