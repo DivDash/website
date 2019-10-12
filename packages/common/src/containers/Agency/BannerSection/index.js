@@ -50,12 +50,6 @@ const BannerSection = ({
                   {...title}
                 />
               }
-              description={
-                <Text
-                  content="A SHARIA COMPLIANT IT SOLUTIONS INC."
-                  {...description}
-                />
-              }
               button={<ButtonGroup />}
             />
           </Box>

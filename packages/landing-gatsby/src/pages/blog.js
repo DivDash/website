@@ -27,8 +27,6 @@ class indexPage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allContentfulBlogPost.edges');
-    console.log(posts);
-
     return (
       <ThemeProvider theme={agencyTheme}>
         <Fragment>

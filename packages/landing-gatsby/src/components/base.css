@@ -602,7 +602,7 @@ form.contactForm > .actions {
 }
 
 .blog-post-body {
-  margin-top: 68px;
+  margin-top: 68px !important;
 }
 
 .blog-post .entry-meta-content,
@@ -643,7 +643,35 @@ div#ReactGridGallery {
   margin: auto;
 }
 
+
 @media only screen and (max-width: 375px) {
+  .blog-post .entry-meta-content, .blog-post .entry-content-bottom {
+    padding: 0 5px;
+}
+h1.section-headline {
+  font-size: 20px;
+}
+
+.blog-post .entry-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.blog-post-body {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 95%;
+  margin: auto;
+  text-align: left;
+}
+
+.blog-post .entry-media { 
+  margin: 10px;
+  overflow: hidden;
+}
   .blog-article-body {
     width: 90%;
     margin: auto;

@@ -66,9 +66,7 @@ const App = () => {
             isMaterial={true}
             icon={<Icon icon={arrow_right} />}
             iconPosition="right"
-            onChange={value => {
-              console.log('Input value: ', value);
-            }}
+            onChange={value => {}}
           />
           <div style={{ marginBottom: '20px' }} />
           <Input
@@ -296,18 +294,14 @@ const App = () => {
           <Button
             title="Default"
             type="button"
-            onClick={() => {
-              console.log('hello');
-            }}
+            onClick={() => {}}
             isMaterial={true}
           />
           &nbsp;&nbsp;&nbsp;
           <Button
             title="outlined"
             type="button"
-            onClick={() => {
-              console.log('hello');
-            }}
+            onClick={() => {}}
             colors="primary"
             variant="outlined"
             disabled={true}
@@ -316,9 +310,7 @@ const App = () => {
           <Button
             title="Loader"
             type="button"
-            onClick={() => {
-              console.log('hello');
-            }}
+            onClick={() => {}}
             colors="primaryWithBg"
             icon={<Icon icon={arrow_right} />}
             isLoading={true}
@@ -327,9 +319,7 @@ const App = () => {
           &nbsp;&nbsp;&nbsp;
           <Button
             type="button"
-            onClick={() => {
-              console.log('hello');
-            }}
+            onClick={() => {}}
             colors="secondaryWithBg"
             variant="fab"
             icon={<Icon icon={arrow_right} />}
@@ -338,9 +328,7 @@ const App = () => {
           <Button
             title="Extended Fab"
             type="button"
-            onClick={() => {
-              console.log('hello');
-            }}
+            onClick={() => {}}
             colors="warningWithBg"
             variant="extendedFab"
             icon={<Icon icon={arrow_right} />}
@@ -356,9 +344,7 @@ const App = () => {
             isMaterial={true}
             switchSize="40px"
             barColor="#ababab"
-            onChange={value => {
-              console.log('Switch value: ', value);
-            }}
+            onChange={value => {}}
           />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Switch
@@ -367,16 +353,12 @@ const App = () => {
             labelPosition="left"
             switchColor="#ff5b60"
             switchSize="46px"
-            onChange={value => {
-              console.log('Switch value: ', value);
-            }}
+            onChange={value => {}}
           />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Switch
             labelText="Label Bottom"
-            onChange={value => {
-              console.log('Switch value: ', value);
-            }}
+            onChange={value => {}}
             labelPosition="bottom"
           />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -385,9 +367,7 @@ const App = () => {
             labelText="Label Right"
             labelPosition="right"
             switchColor="#fdb32a"
-            onChange={value => {
-              console.log('Switch value: ', value);
-            }}
+            onChange={value => {}}
           />
         </div>
         <br />

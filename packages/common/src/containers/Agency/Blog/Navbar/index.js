@@ -9,8 +9,6 @@ import LogoImage from '../../../../assets/image/agency/logo.png';
 import data from '../../../../data/Agency/';
 
 const Navbar = ({ navbarStyle, logoStyle }) => {
-  console.log(data);
-
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>

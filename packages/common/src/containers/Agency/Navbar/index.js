@@ -6,7 +6,7 @@ import Logo from 'reusecore/src/elements/UI/Logo';
 import HamburgMenu from '../../../components/HamburgMenu';
 import ScrollSpyMenu from '../../../components/ScrollSpyMenu';
 import { Container } from './navbar.style';
-import CopyrightSection from '../CopyrightsSection';
+// import CopyrightSection from '../CopyrightsSection';
 
 import LogoImage from '../../../assets/image/agency/logo.png';
 
@@ -23,8 +23,6 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
       type: 'TOGGLE',
     });
   };
-
-  console.log(data);
 
   return (
     <NavbarWrapper {...navbarStyle}>
@@ -58,7 +56,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
               drawerClose={true}
               offset={-100}
             />
-            <CopyrightSection />
+            {/* <CopyrightSection /> */}
           </Drawer>
         </div>
       </Container>

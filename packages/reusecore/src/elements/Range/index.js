@@ -4,9 +4,7 @@ import RangeBoxStyle from './range.style';
 import Rheostat from 'rheostat';
 import 'rheostat/initialize';
 
-const handleChange = props => {
-  console.log(props, 'current range value');
-};
+const handleChange = props => {};
 
 //Main Component
 const RangeBox = ({ className, labelText, labelPosition, type, ...props }) => {

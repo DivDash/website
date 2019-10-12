@@ -29,7 +29,7 @@ export default () => {
       <Fragment>
         {/* Start agency head section */}
         <Head>
-          <title>Telic Solutions | A Sharia Compliant IT Solutions INC.</title>
+          <title>Telic Solutions | A Software Develoment Company.</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#10ac84" />
 
