@@ -10,7 +10,7 @@ import Max from '../../assets/image/agency/client/max.png';
 const data = {
   menuItems: [
     {
-      label: 'Feature',
+      label: 'Features',
       path: '#featureSection',
       offset: '80',
     },
@@ -25,7 +25,7 @@ const data = {
     //   offset: '100',
     // },
     {
-      label: 'Quality feature',
+      label: 'Quality Features',
       path: '#qualitySection',
       offset: '100',
     },
@@ -44,6 +44,11 @@ const data = {
       path: '#faqSection',
       offset: '100',
     },
+    {
+      label: 'Blog',
+      path: '/blog',
+      offset: '100',
+    }
   ],
   aboutus: [
     {

@@ -38,8 +38,36 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       drawerClose={drawerClose}
       {...props}
     >
-      {menuItems.map((menu, index) => (
-        <li key={`menu-item-${index}`}>
+      {menuItems.map((menu, index) => {
+        if (menu.path === '/blog') {
+          return (
+            <li key={`menu-item-${index}`}>
+          {menu.staticLink ? (
+            <a href={menu.path}>
+              <a>{menu.label}</a>
+            </a>
+          ) : (
+            <>
+              {drawerClose ? (
+                <a
+                  href={menu.path}
+                  offset={menu.offset}
+                  onClick={toggleDrawer}
+                >
+                  {menu.label}
+                </a>
+              ) : (
+                <a href={menu.path} offset={menu.offset}>
+                  {menu.label}
+                </a>
+              )}
+            </>
+          )}
+        </li>
+          )
+        }else {
+          return (
+            <li key={`menu-item-${index}`}>
           {menu.staticLink ? (
             <Link href={menu.path}>
               <a>{menu.label}</a>
@@ -62,7 +90,9 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
             </>
           )}
         </li>
-      ))}
+          )
+        }
+      })}
     </Scrollspy>
   );
 };

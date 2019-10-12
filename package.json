@@ -65,6 +65,7 @@
 		"@fortawesome/fontawesome-svg-core": "^1.2.22",
 		"react-grid-gallery": "^0.5.5",
 		"react-images": "^1.0.0",
+		"react-markdown": "^4.2.2",
 		"react-photo-gallery": "^8.0.0"
 	}
 }

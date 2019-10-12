@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import ReactMarkdown from "react-markdown"
 import React, { Fragment } from 'react';
 import Sticky from 'react-stickynode';
 import { Modal } from '@redq/reuse-modal';
@@ -74,14 +74,13 @@ class indexPage extends React.Component {
                                 />
                               </div>
                               <div className="entry-content-bottom">
-                                <p className="entry-content">
-                                  {node.body.body}
-                                </p>
+                                  <ReactMarkdown >
+                                    {node.summary}
+                                  </ReactMarkdown>
                                 <Link
                                   to={`blog/${node.slug}`}
                                   className="entry-read-more"
                                 >
-                                  <span />
                                   Read More
                                 </Link>
                               </div>
@@ -105,15 +104,13 @@ class indexPage extends React.Component {
 export default indexPage;
 
 export const pageQuery = graphql`
-  {
-    allContentfulBlogPost {
+{
+  allContentfulBlogPost {
       edges {
         node {
           slug
           title
-          body {
-            body
-          }
+          summary
           image {
             fluid {
               base64

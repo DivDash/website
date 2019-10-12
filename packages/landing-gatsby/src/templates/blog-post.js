@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import get from 'lodash/get';
 import Template from '../components/layout';
 import Helmet from 'react-helmet';
+import ReactMarkdown from "react-markdown"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Sticky from 'react-stickynode';
@@ -55,13 +56,9 @@ class BlogPostTemplate extends Component {
                       </div>
                       <div className="blog-article-body">
                         <h1 className="section-headline"> {title} </h1>
-                        {/* <p> {tags} </p> */}
-                        <div
-                          className="blog-content"
-                          dangerouslySetInnerHTML={{
-                            __html: body.body,
-                          }}
-                        />
+                          <ReactMarkdown className="blog-post-content" >
+                            {body.body}
+                          </ReactMarkdown>
                       </div>
                     </div>
                   </div>

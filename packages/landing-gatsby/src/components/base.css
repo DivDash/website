@@ -624,6 +624,11 @@ form.contactForm > .actions {
   margin: 25px 0;
 }
 
+.blog-post-content > p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 17px;
+}
+
 .input-field-wrapper textarea {
   height: 150px;
 }
@@ -631,6 +636,11 @@ form.contactForm > .actions {
 .galler-container {
   margin: 100px auto;
   width: 80%;
+}
+
+div#ReactGridGallery {
+  width: 80%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 375px) {

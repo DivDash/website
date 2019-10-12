@@ -28,10 +28,7 @@ const Footer = ({ row, col, titleStyle, logoStyle, textStyle }) => {
             <Text
               content={
                 <p>
-                  We are Leading the IT industry with best Long Term
-                  Relationships, working on most Efficient and Advance
-                  Technology. Our goal is to focus on the ideas popping up in
-                  our markets.
+                 We are a leading IT company in the tech industry and we focus on the ideas appearing in the markets.
                 </p>
               }
               {...textStyle}
